@@ -21,6 +21,6 @@ for i in range(n):
     books.append(book)
 books.sort(key = lambda x: (x.average, x.name))
 with open("sach.txt", "w") as f:
-    f.write("Danh sach nhan vien da sap xep:\n")
+    f.write("Danh sach da sap xep:\n")
     for book in books:
         f.write(book.xuat() + "\n")
